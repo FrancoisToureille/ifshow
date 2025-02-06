@@ -79,6 +79,8 @@ void show_all_interfaces() {
                     for (int i = 0; i < 16; i++) {
                         prefix_length += __builtin_popcount(mask->s6_addr[i]);
                     }
+                    prefix_length+=1;
+
                 }
             }
             
